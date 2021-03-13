@@ -160,6 +160,8 @@ def partitie2(lista,st,dr):
 def quicksort2(lista, st, dr,nr,nmax):
     if nr>=10**6:
         return -1
+    if nr>=10**4 and nmax<100:
+        return -1
     if len(lista)==1:
         return lista
     if st<dr:
